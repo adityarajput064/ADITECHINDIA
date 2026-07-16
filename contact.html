@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Aditech.ind</title>
+<meta name="description" content="Get in touch with Aditya Rajput at Aditech.ind for freelance web, app, or AI project work." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="aurora-scene"></div>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>Aditech.ind</a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="navcta">Get in touch</a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<main>
+  <section style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Contact</div>
+      <h1>Let's talk about your project.</h1>
+      <p class="lead" style="margin-top: 20px;">
+        Fill in the form and it'll open in your email app, ready to send — or reach out directly
+        using the details below.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="wrap">
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-bottom: 24px;">Send a message</h3>
+          <form id="contactForm">
+            <label for="fname">Your name</label>
+            <input type="text" id="fname" placeholder="Your name" required />
+
+            <label for="femail">Your email</label>
+            <input type="email" id="femail" placeholder="you@example.com" required />
+
+            <label for="fmsg">What are you building?</label>
+            <textarea id="fmsg" placeholder="Tell me about the project you have in mind" required></textarea>
+
+            <button type="submit" class="btn-primary" style="border: none; width: 100%; justify-content: center;">Open in email app</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 24px;">Direct contact</h3>
+
+          <div class="contact-row">
+            <span class="icon">@</span>
+            <a href="mailto:myaditechindia@gmail.com">myaditechindia@gmail.com</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="icon">&#9742;</span>
+            <a href="tel:+91785689378">+91 785689378</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="icon">&lt;/&gt;</span>
+            <a href="https://github.com/adityarajput064" target="_blank" rel="noopener">github.com/adityarajput064</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="icon">&#9679;</span>
+            <span>Hajipur, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Aditech.ind. Built by Aditya Rajput.</p>
+    <ul class="footlinks">
+      <li><a href="https://github.com/adityarajput064" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:myaditechindia@gmail.com">Email</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('fname').value.trim();
+  var email = document.getElementById('femail').value.trim();
+  var msg = document.getElementById('fmsg').value.trim();
+  var subject = encodeURIComponent('Project inquiry from ' + name);
+  var body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
+  window.location.href = 'mailto:myaditechindia@gmail.com?subject=' + subject + '&body=' + body;
+});
+</script>
+</body>
+</html>
