@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Campus Connect — Aditech.ind</title>
+<meta name="description" content="Campus Connect: an all-in-one campus social platform built by Aditya Rajput — social feed, live chat, study materials, notice board, and an AI assistant, all in one installable app." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="canonical" href="https://aditech-ind.vercel.app/campus-connect.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Campus Connect — Aditech.ind" />
+<meta property="og:description" content="An all-in-one campus social platform — social feed, live chat, study materials, notice board, and an AI assistant, all in one installable app." />
+<meta property="og:url" content="https://aditech-ind.vercel.app/campus-connect.html" />
+<meta property="og:image" content="https://aditech-ind.vercel.app/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Campus Connect — Aditech.ind" />
+<meta name="twitter:description" content="An all-in-one campus social platform — social feed, live chat, study materials, notice board, and an AI assistant, all in one installable app." />
+<meta name="twitter:image" content="https://aditech-ind.vercel.app/og-image.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="aurora-scene"></div>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="logo-icon.png" alt="Aditech.ind" class="logo-mark" width="36" height="32" /><span class="logo-word">Aditech.ind</span></a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="campus-connect.html" class="active">Campus Connect</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="navcta">Get in touch</a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Featured project</div>
+      <div class="grid-2" style="align-items: center;">
+        <div>
+          <h1>Campus Connect</h1>
+          <p class="lead" style="margin-top: 20px;">
+            An all-in-one campus social platform for college students — a social feed, real-time
+            chat, study material sharing, a notice board, push notifications, and an AI study
+            assistant, all inside one web app that installs like a native mobile app.
+          </p>
+          <div class="btn-row">
+            <a href="https://aditya06.vercel.app/" class="btn-primary" target="_blank" rel="noopener">Open the app</a>
+            <a href="contact.html" class="btn-ghost">Build something like this</a>
+          </div>
+        </div>
+        <div>
+          <div style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); padding: 32px; text-align: center; display: flex; align-items: center; justify-content: center;">
+            <img src="campus-connect-logo.png" alt="Campus Connect logo" style="max-width: 220px; width: 100%; height: auto;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Auth -->
+  <section style="padding-top: 0;">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Authentication</div>
+      <h2>Signing up is verified, logging in is fast.</h2>
+      <div class="grid-2" style="margin-top: 28px;">
+        <div class="card">
+          <h3>Email-verified signup</h3>
+          <p style="margin-top: 14px;">
+            Students sign up with username, email, mobile, and password. A 6-digit OTP is sent to
+            their email and expires in 5 minutes — the account is only created once it's verified.
+            Over 30 disposable email services are blocked at signup so every account is reachable.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Simple day-to-day login</h3>
+          <p style="margin-top: 14px;">
+            Login with username, email, or mobile plus password — no OTP needed here, so getting
+            back into the app is quick. JWT tokens keep students signed in for 7 days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feed -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Dashboard</div>
+      <h2>A campus feed built for real student life.</h2>
+      <div class="grid-3" style="margin-top: 28px;">
+        <div class="card">
+          <h3>Nine post types</h3>
+          <p style="margin-top: 14px;">General, Image, PDF, Notes, Question, Poll, Lost &amp; Found, Event, and Notice — a format for whatever a student needs to share.</p>
+        </div>
+        <div class="card">
+          <h3>Full engagement</h3>
+          <p style="margin-top: 14px;">Like, comment, save, and share any post — plus delete on your own posts, and revote on polls whenever you change your mind.</p>
+        </div>
+        <div class="card">
+          <h3>Follow &amp; notify</h3>
+          <p style="margin-top: 14px;">Follow other students and get notified the moment someone you follow shares something new.</p>
+        </div>
+        <div class="card">
+          <h3>Live stat cards</h3>
+          <p style="margin-top: 14px;">Real-time counts for Students, Notes, Notices, and Events sit at the top of the dashboard — tap Students to open the full directory.</p>
+        </div>
+        <div class="card">
+          <h3>Campus Groups</h3>
+          <p style="margin-top: 14px;">Five dedicated club pages — Mechanical Dept, Esports Club, Lit Society, Tech Fest, and Placement Cell — each with its own filtered feed.</p>
+        </div>
+        <div class="card">
+          <h3>Notifications</h3>
+          <p style="margin-top: 14px;">Instant in-app alerts via Socket.IO, backed by real browser/phone push notifications — even when the app is closed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Study materials + notice board -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Study Materials &amp; Notices</div>
+      <h2>Everything the class needs, in one place.</h2>
+      <div class="grid-2" style="margin-top: 28px;">
+        <div class="card">
+          <h3>Study Materials</h3>
+          <p style="margin-top: 14px;">
+            Students upload notes, PDFs, and files up to 20MB, stored securely on Cloudinary and
+            organized by department. Any student can browse and download what's shared.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Notice Board</h3>
+          <p style="margin-top: 14px;">
+            A dedicated, department-wise space for official updates — exam schedules, workshop
+            announcements, and other important campus news.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discussion room -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Discussion Room</div>
+      <h2>Live chat, redesigned to feel like Discord.</h2>
+      <div class="grid-3" style="margin-top: 28px;">
+        <div class="card">
+          <h3>Group chat</h3>
+          <p style="margin-top: 14px;">An open room for every student, with messages that auto-delete after 30 seconds to keep it focused on the live conversation.</p>
+        </div>
+        <div class="card">
+          <h3>Direct messages</h3>
+          <p style="margin-top: 14px;">Private 1-on-1 conversations between two students, with messages that auto-delete after 6 hours.</p>
+        </div>
+        <div class="card">
+          <h3>Presence &amp; typing</h3>
+          <p style="margin-top: 14px;">A live "who's online" list with a green status dot, real-time typing indicators, and a 40-emoji picker in every chat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus AI -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Campus AI</div>
+      <h2>A floating AI assistant, always one tap away.</h2>
+      <p class="lead" style="margin-top: 14px;">
+        Powered by Google's Gemini API — a "Campus AI" item in the sidebar on desktop, and a
+        floating chat button on mobile where the sidebar becomes a bottom nav bar.
+      </p>
+      <div style="margin-top: 28px;">
+        <span class="skill-pill">Find Notes</span>
+        <span class="skill-pill">Explain Physics</span>
+        <span class="skill-pill">GTU PYQ</span>
+        <span class="skill-pill">Attendance</span>
+        <span class="skill-pill">Events</span>
+      </div>
+      <p style="margin-top: 16px; max-width: 560px;">Beyond these quick actions, students can ask Campus AI anything and chat freely.</p>
+    </div>
+  </section>
+
+  <!-- PWA -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Mobile Experience</div>
+      <h2>Installs like a native app.</h2>
+      <div class="grid-3" style="margin-top: 28px;">
+        <div class="card">
+          <h3>Installable everywhere</h3>
+          <p style="margin-top: 14px;">Add it to the home screen on Android, iPhone, or Desktop — no app store needed.</p>
+        </div>
+        <div class="card">
+          <h3>Instagram-style layout</h3>
+          <p style="margin-top: 14px;">On mobile, the sidebar becomes a bottom tab bar — Feed, Chat, Materials, Notices, Post, Profile — with touch targets sized for thumbs, no pinch-zoom required.</p>
+        </div>
+        <div class="card">
+          <h3>Push, even when closed</h3>
+          <p style="margin-top: 14px;">Notifications keep arriving even when the app is closed or running in the background.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech stack -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Technology Stack</div>
+      <h2>What's running under the hood.</h2>
+      <div style="margin-top: 28px;">
+        <span class="skill-pill">React (Vite)</span>
+        <span class="skill-pill">React Router</span>
+        <span class="skill-pill">Tailwind CSS</span>
+        <span class="skill-pill">Node.js + Express</span>
+        <span class="skill-pill">Socket.IO</span>
+        <span class="skill-pill">MongoDB + Mongoose</span>
+        <span class="skill-pill">JWT + bcrypt</span>
+        <span class="skill-pill">Cloudinary</span>
+        <span class="skill-pill">Web Push (VAPID)</span>
+        <span class="skill-pill">Nodemailer</span>
+        <span class="skill-pill">Google Gemini API</span>
+        <span class="skill-pill">Render</span>
+        <span class="skill-pill">Vercel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="card" style="text-align: center; padding: 56px 32px;">
+        <h2>Want something like this built for you?</h2>
+        <p class="lead" style="margin: 14px auto 0;">Campus Connect is the project I'm proudest of. If you've got an idea for an app or a platform, I'd love to hear it.</p>
+        <div class="btn-row" style="justify-content: center;">
+          <a href="https://aditya06.vercel.app/" class="btn-ghost" target="_blank" rel="noopener">Open Campus Connect</a>
+          <a href="contact.html" class="btn-primary">Start a project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Aditech.ind. Built by Aditya Rajput.</p>
+    <ul class="footlinks">
+      <li><a href="https://github.com/adityarajput064" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:myaditechindia@gmail.com">Email</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <p class="visit-counter"><img src="https://visitor-badge.laobi.icu/badge?page_id=adityarajput064.aditechindia&left_text=Site+visits&left_color=%23111827&right_color=%236d5bd0" alt="Visitor count" style="vertical-align:middle;height:20px;" /></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
