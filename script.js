@@ -122,3 +122,17 @@
     toggle.addEventListener('click', function () { links.classList.toggle('open'); });
   }
 })();
+
+// Site-wide visitor counter (shared across all pages via a single key)
+(function () {
+  var el = document.getElementById('visitCount');
+  if (!el) return;
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/aditechind-site-total-views-v1')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      el.textContent = Number(data.value).toLocaleString();
+    })
+    .catch(function () {
+      el.textContent = '—';
+    });
+})();
